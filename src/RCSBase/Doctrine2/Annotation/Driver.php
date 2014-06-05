@@ -1,7 +1,7 @@
 <?php
-namespace RCSBase\Doctrine2;
+namespace RCSBase\Doctrine2\Annotation;
 
-class AnnotationDriver extends \Doctrine\ORM\Mapping\Driver\AnnotationDriver
+class Driver extends \Doctrine\ORM\Mapping\Driver\AnnotationDriver
 {
     public function __construct($reader, $paths = null) 
     {
