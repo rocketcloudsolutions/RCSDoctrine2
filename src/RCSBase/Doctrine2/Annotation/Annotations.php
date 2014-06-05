@@ -1,16 +1,16 @@
 <?php
-namespace RCSBase\Doctrine2;
+namespace RCSBase\Doctrine2\Annotation;
 
 Annotation::$reader = new \Doctrine\Common\Annotations\AnnotationReader();  
 
 require_once 'DiscriminatorEntry.php';
 
-class Annotation 
+class Annotations
 {  
     public static $reader;  
 
     public static function getAnnotationsForClass( $className ) 
     {
-        return Annotation::$reader->getClassAnnotations(new \ReflectionClass( $className ));
+        return Annotations::$reader->getClassAnnotations(new \ReflectionClass( $className ));
     }  
 }  
