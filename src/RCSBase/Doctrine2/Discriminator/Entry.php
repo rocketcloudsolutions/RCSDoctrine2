@@ -1,7 +1,7 @@
 <?php
-namespace RCSBase\Doctrine2;
+namespace RCSBase\Doctrine2\Discriminator;
 
-class DiscriminatorEntry 
+class Entry
 {  
     private $value;
 
