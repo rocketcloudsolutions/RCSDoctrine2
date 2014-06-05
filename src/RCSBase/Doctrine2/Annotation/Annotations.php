@@ -1,9 +1,7 @@
 <?php
 namespace RCSBase\Doctrine2\Annotation;
 
-Annotation::$reader = new \Doctrine\Common\Annotations\AnnotationReader();  
-
-require_once 'DiscriminatorEntry.php';
+Annotation::$reader = new \Doctrine\Common\Annotations\AnnotationReader();
 
 class Annotations
 {  
