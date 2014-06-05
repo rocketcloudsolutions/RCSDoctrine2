@@ -1,7 +1,7 @@
 <?php
 namespace RCSBase\Doctrine2\Annotation;
 
-Annotation::$reader = new \Doctrine\Common\Annotations\AnnotationReader();
+Annotations::$reader = new \Doctrine\Common\Annotations\AnnotationReader();
 
 class Annotations
 {  
