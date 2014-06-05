@@ -1,5 +1,5 @@
 <?php
-namespace RCSBase;
+namespace RCSDoctrine;
 
 return array(
 
