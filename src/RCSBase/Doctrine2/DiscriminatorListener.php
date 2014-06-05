@@ -1,5 +1,5 @@
 <?php
-namespace RCSBase\Doctrine;
+namespace RCSBase\Doctrine2;
 
 class DiscriminatorListener implements \Doctrine\Common\EventSubscriber 
 {  
@@ -7,7 +7,7 @@ class DiscriminatorListener implements \Doctrine\Common\EventSubscriber
     private $cachedMap;
     private $map;
   
-    const ENTRY_ANNOTATION = 'RCSBase\Doctrine\DiscriminatorEntry';
+    const ENTRY_ANNOTATION = 'RCSBase\Doctrine2\DiscriminatorEntry';
   
     public function getSubscribedEvents() 
     {
@@ -22,7 +22,7 @@ class DiscriminatorListener implements \Doctrine\Common\EventSubscriber
     
     private function extractEntry( $class ) 
     {  
-        $annotations = \RCSBase\Doctrine\Annotation::getAnnotationsForClass( $class );
+        $annotations = \RCSBase\Doctrine2\Annotation::getAnnotationsForClass( $class );
         $success = false;  
         
         foreach($annotations as $key => $annotation)
@@ -48,7 +48,7 @@ class DiscriminatorListener implements \Doctrine\Common\EventSubscriber
     {  
         $rc             = new \ReflectionClass( $class );  
         $is_base_class  = false;
-        $annotations    = \RCSBase\Doctrine\Annotation::getAnnotationsForClass( $class );
+        $annotations    = \RCSBase\Doctrine2\Annotation::getAnnotationsForClass( $class );
         
         
         foreach($annotations as $annotation)

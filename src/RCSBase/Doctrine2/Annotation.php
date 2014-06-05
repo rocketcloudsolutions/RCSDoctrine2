@@ -1,5 +1,5 @@
 <?php
-namespace RCSBase\Doctrine;
+namespace RCSBase\Doctrine2;
 
 Annotation::$reader = new \Doctrine\Common\Annotations\AnnotationReader();  
 
